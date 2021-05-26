@@ -7,7 +7,7 @@ This app functions as an e-Commerce where users can:
 Developed using React Redux and D3 library (Victory Chart)
 
 # Preview
-![app image](https://imgur.com/T8Dm7hK)
+![](https://imgur.com/a/WRiAvSn)
 
 # Preview
 ![app image](https://imgur.com/T8Dm7hK)
