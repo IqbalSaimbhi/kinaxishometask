@@ -27,9 +27,7 @@ test("Should render products", () => {
       </MemoryRouter>
     </Provider>
   );
-  expect(getByTestId("navbar-heading")).toHaveTextContent(
-    "Redux Shopping Cart"
-  );
+  expect(getByTestId("navbar-heading")).toHaveTextContent("Kinaxis Home Task");
   expect(getByTestId("cart-count")).toBeInTheDocument();
   expect(getByTestId("cart-title")).toBeInTheDocument();
 });
