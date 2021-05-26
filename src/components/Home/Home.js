@@ -7,7 +7,6 @@ import {
   VictoryPie
 } from "victory";
 import { connect } from "react-redux";
-import { addToCart } from "../../redux/Shopping/shopping-actions";
 
 const data1 = [
   { product: 1, sale: 3000 },
@@ -25,7 +24,7 @@ const data2 = [
 const Home = () => {
   return (
     <header className={styles.singleItem}>
-      <h1 className={styles.singleItem}>Sales Overview</h1>
+      <h1 data-testid="sales-heading" className={styles.singleItem}>Sales Overview</h1>
       <svg viewBox="0 0 900 300">
         <VictorySharedEvents
           events={[
@@ -109,12 +108,6 @@ const Home = () => {
 const mapStateToProps = state => {
   return {
     current: state.shop.currentItem
-  };
-};
-
-const mapDispatchToProps = dispatch => {
-  return {
-    addToCart: id => dispatch(addToCart(id))
   };
 };
 

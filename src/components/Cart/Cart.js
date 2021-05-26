@@ -32,8 +32,8 @@ const Cart = ({ cart }) => {
       <div data-testid="cart-summary" className={styles.cart__summary}>
         <h4 data-testid="cart-title" className={styles.summary__title}>Cart Summary</h4>
         <div className={styles.summary__price} data-testid="item-price">
-          <span>TOTAL: ({totalItems} items)</span>
-          <span>$ {totalPrice}</span>
+          <span data-testid="total-count">TOTAL: ({totalItems} items)</span>
+          <span  data-testid="total-price">$ {totalPrice}</span>
         </div>
         <button data-testid="checkout-button" className={styles.summary__checkoutBtn}>
           Proceed To Checkout

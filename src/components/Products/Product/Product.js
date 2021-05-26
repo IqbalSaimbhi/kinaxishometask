@@ -9,7 +9,7 @@ import {
   addToCart,
 } from "../../../redux/Shopping/shopping-actions";
 
-const Product = ({ product, addToCart, loadCurrentItem }) => {
+const Product = ({ index, product, addToCart, loadCurrentItem }) => {
   return (
     <div data-testid="product-item" className={styles.product}>
       <img
@@ -37,7 +37,7 @@ const Product = ({ product, addToCart, loadCurrentItem }) => {
         <button
           onClick={() => addToCart(product.id)}
           className={`${styles.buttons__btn} ${styles.buttons__add}`}
-          data-testid="add-to-cart-button"
+          data-testid={`add-to-cart-button-${index}`}
         >
           Add To Cart
         </button>
