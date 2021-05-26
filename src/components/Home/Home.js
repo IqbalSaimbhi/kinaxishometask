@@ -4,6 +4,7 @@ import {
   VictorySharedEvents,
   VictoryLabel,
   VictoryBar,
+  VictoryChart,
   VictoryPie
 } from "victory";
 import { connect } from "react-redux";
@@ -66,7 +67,7 @@ const Home = () => {
               width={300}
               standalone={false}
               style={{
-                data: { width: 20 },
+                data: { width: 20, fill: "#18456C" },
                 background: { fill: "pink" },
                 labels: { fontSize: 10 }
               }}
